@@ -6,15 +6,12 @@
 
 import React from 'react';
 import {
-  AppRegistry,
-  View
+  AppRegistry
 } from 'react-native';
 import Header from './src/components/header';
 
 const RateIt = () => (
-      <View>
-        <Header />
-      </View>
+        <Header title={'RateIt'} />
     );
 
 
