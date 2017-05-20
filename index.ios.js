@@ -6,12 +6,17 @@
 
 import React from 'react';
 import {
-  AppRegistry
+  AppRegistry,
+  View
 } from 'react-native';
-import Header from './src/components/header';
+import Header from './src/components/Header';
+import RatingList from './src/components/RatingList';
 
 const RateIt = () => (
-        <Header title={'RateIt'} />
+        <View>
+          <Header title={'RateIt'} />
+          <RatingList />
+        </View>
     );
 
 
