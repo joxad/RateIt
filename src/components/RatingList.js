@@ -1,18 +1,35 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import RatingDetail from './RatingDetail';
 import axios from 'axios';
 // cmd D in simulator to debug
 class RatingList extends Component {
+
+  state = {
+    ratings: []
+  };
+
   componentWillMount() {
     console.log('componentWillMount');
     //debugger;
     axios.get('https://rallycoding.herokuapp.com/api/music_albums')
-    .then(response => console.log(response));
+    .then(response => this.setState({
+        ratings: response.data
+      }
+    ));
   }
+
+  renderRatings() {
+    return this.state.ratings.map(rating =>
+      <RatingDetail key={rating.title} rating={rating} />
+
+    );
+  }
+
   render() {
     return (
       <View>
-        <Text>Rating List 2</Text>
+        {this.renderRatings()}
       </View>
     );
   }
