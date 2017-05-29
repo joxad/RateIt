@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import RatingDetail from './RatingDetail';
 import axios from 'axios';
+
+import RatingDetail from './RatingDetail';
 // cmd D in simulator to debug
 class RatingList extends Component {
 

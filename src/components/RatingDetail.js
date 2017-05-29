@@ -1,15 +1,13 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
+import Card from './Card';
 
 const RatingDetail = (props) => {
   return (
-    <View>
-      <Text>
-        {props.rating.title}
-      </Text>
-    </View>
+    <Card>
+      <Text>{props.rating.title}</Text>
+    </Card>
   );
 };
-
 
 export default RatingDetail;
