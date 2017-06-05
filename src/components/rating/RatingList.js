@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
-import axios from 'axios';
+import { View, ScrollView } from 'react-native';
+import FAB from '../common/FAB';
 import RatingDetail from './RatingDetail';
+import axios from 'axios';
 
 const data = require('../../../data.json');
 
@@ -34,9 +35,12 @@ class RatingList extends Component {
 
   render() {
     return (
-      <ScrollView>
-        {this.renderRatings()}
-      </ScrollView>
+    //  <View>
+      //  <FAB />
+        <ScrollView>
+          {this.renderRatings()}
+        </ScrollView>
+    //  </View>
     );
   }
 }
