@@ -7,17 +7,12 @@
 import React from 'react';
 import {
   AppRegistry,
-  View
 } from 'react-native';
-import Header from './src/components/Header';
-import RatingList from './src/components/RatingList';
+import RootPage from './src/components/root/RootPage';
 
 const RateIt = () => (
-        <View>
-          <Header title={'RateIt'} />
-          <RatingList />
-        </View>
-    );
+        <RootPage />
+);
 
 
 AppRegistry.registerComponent('rateit', () => RateIt);

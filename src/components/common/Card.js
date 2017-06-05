@@ -1,5 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
+const color = require('../../styles/color.json');
 
 const Card = (props) => {
     return (
@@ -13,7 +14,7 @@ const styles = {
   containerStyle: {
     borderWidth: 1,
     borderRadius: 2,
-    borderColor: '#ddd',
+    borderColor: color.borderColor,
     borderBottomWidth: 0,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
