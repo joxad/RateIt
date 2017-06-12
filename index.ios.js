@@ -14,5 +14,4 @@ const RateIt = () => (
         <RootPage />
 );
 
-
 AppRegistry.registerComponent('rateit', () => RateIt);
