@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import Header from '../common/Header';
+import { Header } from '../common';
 import RatingList from '../rating/RatingList';
 
 const RootPage = () => {

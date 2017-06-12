@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { View, ScrollView } from 'react-native';
-import FAB from '../common/FAB';
-import RatingDetail from './RatingDetail';
 import axios from 'axios';
+import RatingDetail from './RatingDetail';
 
 const data = require('../../../data.json');
 

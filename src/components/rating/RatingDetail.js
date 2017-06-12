@@ -1,8 +1,6 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
-import Card from '../common/Card';
-import CardSection from '../common/CardSection';
-import Button from '../common/Button';
+import { Card, CardSection, Button } from '../common';
 
 const RatingDetail = ({ rating }) => {
   const { title, artist, thumbnail_image, image } = rating;
@@ -31,7 +29,10 @@ const RatingDetail = ({ rating }) => {
         <Image style={imageStyle} source={{ uri: image }} />
       </CardSection>
       <CardSection>
-        <Button title={'Voir le détail'} />
+        <Button
+          onPress={() => console.log(title)}
+          title={'Voir le détail'}
+        />
       </CardSection>
     </Card>
 

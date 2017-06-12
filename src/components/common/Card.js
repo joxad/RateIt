@@ -1,5 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
+
 const color = require('../../styles/color.json');
 
 const Card = (props) => {
@@ -27,4 +28,4 @@ const styles = {
   }
 };
 
-export default Card;
+export { Card };
